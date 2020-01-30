@@ -3,6 +3,6 @@
 <%= @classroom.semester %>
 </p>
 
-<%= students.all.each do |student| %>
-  <%= render partial: "students/student", locals: { student: student } %>
+<%= students.each do |student| %>
+  <%= render "students/student" %>
 <% end %>
