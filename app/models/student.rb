@@ -14,8 +14,8 @@ class Student < ActiveRecord::Base
   has_many :classroom_students
   has_many :classrooms, through: :classroom_students
   
-  def self.search
-    return self.where("name LIKE ?", "%M%")
+  def self.search(query)
+    return self.where("name LIKE ?", )
   end
   
 end
