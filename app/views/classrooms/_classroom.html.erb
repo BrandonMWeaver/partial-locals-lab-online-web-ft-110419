@@ -4,5 +4,5 @@
 </p>
 
 <%= students.each do |student| %>
-  <%= render "students/student" %>
+  <%= render partial: "students/student", locals { student: student } %>
 <% end %>
